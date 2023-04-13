@@ -1,8 +1,8 @@
 {
-  "name": "projectundefined.org",
+  "name": "projectundefined",
   "version": "1.0.0",
   "private": true,
-  "description": "projectundefined.org",
+  "description": "projectundefined",
   "author": "Wesley Schell",
   "keywords": [
     "gatsby"
