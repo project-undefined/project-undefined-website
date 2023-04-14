@@ -5,7 +5,11 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 export default component$(() => {
   return (
     <div>
-      test
+      <h1 id="title">Engineering the future of </h1>
+      
+      <body>
+        <h1>Ditch big tech.</h1>
+      </body>
     </div>
   );
 });

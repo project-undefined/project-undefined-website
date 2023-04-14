@@ -1,0 +1,46 @@
+@use "../global.scss";
+
+.nav-bar {
+    background: global.$base-color;
+}
+
+.nav-bar button {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+#title::after {
+    content: "Privacy";
+    text-decoration: underline;
+    animation: change-text 4s infinite;
+
+}
+
+@keyframes change-text {
+    $keyframe: 0;
+    @each $placeholder in global.$title-placeholders {
+
+      
+        #{$keyframe}% {
+            color: black;
+            content: $placeholder;
+        }
+        
+        $keyframe: $keyframe+50;
+        
+    }
+
+     
+    20% { 
+        color: transparent;
+    }
+
+    60% { 
+        color: transparent;
+    }
+
+   
+    
+   
+}
