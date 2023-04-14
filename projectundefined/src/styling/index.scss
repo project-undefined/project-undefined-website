@@ -11,36 +11,30 @@
 }
 
 #title::after {
-    content: "Privacy";
+    content: nth(global.$title-placeholders, 1);
     text-decoration: underline;
-    animation: change-text 4s infinite;
+    animation: change-text 5s infinite;
+    animation-delay: 0ms;
 
 }
 
+// Text animation
 @keyframes change-text {
-    $keyframe: 0;
-    @each $placeholder in global.$title-placeholders {
+    $keyframe-txt: 0;
+  
+    @for $i from 1 to length(global.$title-placeholders)+1 {
 
-      
-        #{$keyframe}% {
-            color: black;
-            content: $placeholder;
+        @debug $keyframe-txt;
+        #{$keyframe-txt + 10}% {
+            color: transparent;
         }
+        #{$keyframe-txt}% {
+            color: black;
+            content: nth(global.$title-placeholders, $i);
+        }
+        $keyframe-txt: $keyframe-txt+calc(100 / (length(global.$title-placeholders)));
+
         
-        $keyframe: $keyframe+50;
-        
     }
-
-     
-    20% { 
-        color: transparent;
-    }
-
-    60% { 
-        color: transparent;
-    }
-
-   
-    
    
 }
