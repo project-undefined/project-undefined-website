@@ -1,13 +1,22 @@
 @use "../global.scss";
 
-.nav-bar {
-    background: global.$base-color;
+
+
+
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vw;
+    font-size: 2vw;
+    border: 1px solid black;
 }
 
-.nav-bar button {
-    margin-left: 10px;
-    background-color: transparent;
-    border: none;
+#title {
+    font-family: pasti;
+    color: black;
 }
 
 #title::after {
@@ -24,13 +33,18 @@
   
     @for $i from 1 to length(global.$title-placeholders)+1 {
 
-        @debug $keyframe-txt;
+       
         #{$keyframe-txt + 10}% {
             color: transparent;
         }
+
         #{$keyframe-txt}% {
-            color: black;
+     
             content: nth(global.$title-placeholders, $i);
+            color: green;
+     
+
+        
         }
         $keyframe-txt: $keyframe-txt+calc(100 / (length(global.$title-placeholders)));
 

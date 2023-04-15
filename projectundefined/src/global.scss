@@ -1,6 +1,24 @@
 
-$base-color: red;
+$base-color: olive;
 $higher-color: blue;
-
-
 $title-placeholders: "Security", "Privacy", "Decentralization";
+
+body {
+    margin: 0px;
+}
+
+.nav-bar {
+    background: $base-color;
+}
+
+.nav-bar :nth-child(n+1) {
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+@font-face {
+    font-family: pasti;
+    src: url("../fonts/pasti-font/PastiOblique-7B0wK.otf");
+}
