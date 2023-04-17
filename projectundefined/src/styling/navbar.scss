@@ -1,0 +1,18 @@
+@use "../global.scss";
+.nav-bar {
+    background: global.$base-color;
+}
+
+.nav-bar {
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-bar button {
+    background-color: transparent;
+    border: none;
+    margin-left: 1px;
+}

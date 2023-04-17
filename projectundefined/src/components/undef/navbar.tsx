@@ -1,5 +1,5 @@
 import { component$, Slot } from '@builder.io/qwik';
-import "../../styling/index.scss";
+import "../../styling/navbar.scss";
 
 
 export const NavBar = component$(()=> {
@@ -10,6 +10,7 @@ export const NavBar = component$(()=> {
             <button>Solutions</button>
             <button>Community</button>
             <button>Roadmap</button>
+            <button>Merchandise</button>
             <button>Github</button>
         </nav>
     )
