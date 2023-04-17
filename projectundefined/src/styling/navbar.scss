@@ -14,5 +14,31 @@
 .nav-bar button {
     background-color: transparent;
     border: none;
-    margin-left: 1px;
+    margin-left: 5px;
+
+  
 }
+
+
+button div {
+        user-select: none;
+        transition: 0.5s;
+        height: 2px;
+        width: 0px;
+        background-color:black;
+        border-color: black;
+        border-style: solid;
+        border-width: 0px;
+        border-bottom-width: 2px;
+        position: relative;
+        left: 50%;
+        top: 20px;
+        transform: translate(-50%, 0);
+}
+
+button:hover div {
+        width: 100%;
+}
+
+
+

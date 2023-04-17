@@ -6,12 +6,12 @@ export const NavBar = component$(()=> {
     return (
         <nav class="nav-bar">
             <img src="../../../public/favicon.svg" width="20" height="20"></img>
-            <button>About</button>
-            <button>Solutions</button>
-            <button>Community</button>
-            <button>Roadmap</button>
-            <button>Merchandise</button>
-            <button>Github</button>
+            <button><div/>About</button>
+            <button><div/>Solutions</button>
+            <button><div/>Community</button>
+            <button><div/>Roadmap</button>
+            <button><div/>Merchandise</button>
+            <button><div/>Github</button>
         </nav>
     )
 });
