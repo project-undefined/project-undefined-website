@@ -1,8 +1,12 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { $, component$, Slot } from '@builder.io/qwik';
 import "../../styling/navbar.scss";
 
 
 export const NavBar = component$(()=> {
+
+    const toGithub = $(()=>{
+        window.location.href = "https://github.com/project-undefined";
+    })
     return (
         <nav class="nav-bar">
             <a href="/">
@@ -13,7 +17,7 @@ export const NavBar = component$(()=> {
             <button><div/>Community</button>
             <button><div/>Roadmap</button>
             <button><div/>Merchandise</button>
-            <button><div/>Github</button>
+            <button onClick$={toGithub}><div/>Github</button>
         </nav>
     )
 });

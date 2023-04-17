@@ -26,21 +26,24 @@
 
 }
 
-body div.section {
-    width: 50vw; 
-    height: 40vw;
-    border: 1px solid black;
-    float: left;
-}
+
 
 body div.section h2 {
     margin-left: 2vw;
     font-size: 3vw;
 }
 
-body div.section:nth-child(even) {
+body div.section {
+    width: 50vw; 
+    height: 40vw;
+    border: 1px solid black;
+
+}
+
+body div.section:nth-child(odd) {
+    
     position: relative;
-    float: right;
+    left: 50.1vw;
 
 }
 
