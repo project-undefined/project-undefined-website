@@ -1,10 +1,11 @@
 
 $base-color: olive;
 $higher-color: blue;
-$title-placeholders: "Security", "Privacy", "Decentralization";
+$title-placeholders: "Security", "Privacy", "Decentralization", "Customization";
 
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 

@@ -5,7 +5,9 @@ import "../../styling/navbar.scss";
 export const NavBar = component$(()=> {
     return (
         <nav class="nav-bar">
-            <img src="../../../public/favicon.svg" width="20" height="20"></img>
+            <a href="/">
+                <img src="../../../public/favicon.svg" width="40" height="40"></img>
+            </a>
             <button><div/>About</button>
             <button><div/>Solutions</button>
             <button><div/>Community</button>
