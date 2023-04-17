@@ -10,14 +10,29 @@ export default component$(() => {
       </div>
 
       <body>
-        <h1>Ditch big tech.</h1>
+        <div>
+          <h2>Ditch big tech.</h2>
+
+        </div>
+          
+        <div>
+          <h2>Stay Green</h2>
+
+        </div>
+
+        <div>
+          <h2>Protect your data</h2>
+          
+        </div>
+
+
       </body>
     </div>
   );
 });
 
 export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
+  title: 'Project Undefined',
   meta: [
     {
       name: 'description',

@@ -2,14 +2,12 @@
 
 
 
-
-
 #banner {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 20vw;
+    height: 50vw;
     font-size: 2vw;
     border: 1px solid black;
 }
@@ -21,6 +19,7 @@
 
 #title::after {
     content: nth(global.$title-placeholders, 1);
+    color: green;
     text-decoration: underline;
     animation: change-text 5s infinite;
     animation-delay: 0ms;
@@ -43,8 +42,6 @@
             content: nth(global.$title-placeholders, $i);
             color: green;
      
-
-        
         }
         $keyframe-txt: $keyframe-txt+calc(100 / (length(global.$title-placeholders)));
 
