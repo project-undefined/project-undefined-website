@@ -34,31 +34,7 @@
     height: 5vw;
 }
 
-.nav-bar button div {
-        user-select: none;
-        transition: 0.5s;
-        height: 2px;
-        width: 0px;
-        background-color:black;
-        border-color: black;
-        border-style: solid;
-        border-width: 0px;
-        border-bottom-width: 2px;
-        position: relative;
-        left: 50%;
-        top: 1.9vw;
-        transform: translate(-50%, 0);
-}
 
-button:hover div {
-        width: 100%;
-}
-
-button:active div { 
-    transition: .2s;
-    width: 100%;
-    transform: translate(-50%, -1.9vw);
-}
 
 
 

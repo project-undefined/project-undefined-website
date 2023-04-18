@@ -1,6 +1,8 @@
 import { $, component$, Slot } from '@builder.io/qwik';
 import "../../styling/navbar.scss";
-
+import "../../styling/navbutton.scss";
+import { DropDown } from './dropdown';
+import { NavButton } from './navbutton';
 
 export const NavBar = component$(()=> {
 
@@ -12,12 +14,12 @@ export const NavBar = component$(()=> {
             <a href="/">
                 <img src="../../../public/favicon.svg" width="40" height="40"></img>
             </a>
-            <button><div/>About</button>
-            <button><div/>Solutions</button>
-            <button><div/>Community</button>
-            <button><div/>Roadmap</button>
-            <button><div/>Merchandise</button>
-            <button onClick$={toGithub}><div/>Github</button>
+            <NavButton text='About'    /> 
+            <NavButton text='Solution' />
+            <NavButton text='Community'/>
+            <NavButton text='Roadmap'  />
+            <NavButton text='Merchandise' />
+            <NavButton onClick$={toGithub} text='Github' />
         </nav>
     )
 });
