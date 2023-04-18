@@ -28,6 +28,10 @@ export default component$(() => {
           <h2>Be. you.</h2>
         </div>
 
+        <div>
+          <h2>Support us</h2>
+          iota1qzd8tgz65ttyfvr6rqze3de4nvm73vcet9qpkmwq7nph6k6jd6mh288rw67
+        </div>
 
       </body>
     </div>

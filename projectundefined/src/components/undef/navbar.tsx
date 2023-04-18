@@ -12,7 +12,7 @@ export const NavBar = component$(()=> {
     return (
         <nav class="nav-bar">
             <a href="/">
-                <img src="../../../public/favicon.svg" width="40" height="40"></img>
+                <img src="/favicon.svg" width="40" height="40"></img>
             </a>
             
             <NavButton text='About'    /> 
