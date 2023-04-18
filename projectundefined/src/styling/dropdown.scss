@@ -1,0 +1,40 @@
+
+ .drop-down::after {
+     content: "^";
+ }
+
+ .drop-down {
+    display: inline-block;
+    position: relative;
+ }
+
+ .drop-down-after {
+   position: absolute;
+   transform: translate(-65%);
+ }
+
+ .drop-down:hover .drop-down-after {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(lightgreen, white );
+    border: 2px solid black;
+    animation: open-dropdown 1s;
+ }
+
+ @keyframes open-dropdown {
+    0% {
+        width: 0px;
+        height: 0px; 
+
+    }
+ 
+    30% {
+        width:100px;
+        height: 0px;
+    }
+
+    100% {
+        width: 100px;
+        height: 200px;
+    }
+ }
