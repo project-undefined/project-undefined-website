@@ -1,16 +1,13 @@
 @use "../global.scss";
 
 .nav-bar {
-    background: global.$base-color;
-    width: 100vw;
-    height: 5vw;
-}
-
-.nav-bar {
+    position: fixed;
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: transparent;
+    background: global.$base-color;
+    width: 100vw;
+    height: 50px;
     border: none;
 }
 
@@ -21,17 +18,17 @@
 .nav-bar button {
     background-color: transparent;
     border: none;
-    margin-left: 1vw;
-    margin-top: 1.3vw;
-    font-size: 1.3vw;
+    margin-left: 1px;
+    margin-top: 14px;
+    font-size: 15px;
 
   
 }
 
 .nav-bar img {
     position: absolute;
-    width: 5vw;
-    height: 5vw;
+    width: 60px;
+    height: 60px;
 }
 
 

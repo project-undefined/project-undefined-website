@@ -15,8 +15,8 @@ export const NavBar = component$(()=> {
                 <img src="../../../public/favicon.svg" width="40" height="40"></img>
             </a>
             <NavButton text='About'    /> 
-            <NavButton text='Solution' />
-            <NavButton text='Community'/>
+            <DropDown text='Solutions' />
+            <DropDown text='Community'/>
             <NavButton text='Roadmap'  />
             <NavButton text='Merchandise' />
             <NavButton onClick$={toGithub} text='Github' />

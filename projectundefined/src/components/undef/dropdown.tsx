@@ -1,9 +1,15 @@
 import { $, component$, Slot } from '@builder.io/qwik';
+import { NavButton } from './navbutton';
 
-export const DropDown = component$(()=>{
+interface NavButtonProps { 
+    text?: string;
+}
+
+export const DropDown = component$<NavButtonProps>((props)=>{
     return (
-        <button class="drop-down">
-            <div/> 
-        </button>
+        <span class="drop-down">
+            <NavButton text={props.text}/>
+            
+        </span>
     );
 });
