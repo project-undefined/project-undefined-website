@@ -10,7 +10,7 @@
     border-bottom-width: 2px;
     position: relative;
     left: 50%;
-    top: 1.9vw;
+    top: 20px;
     transform: translate(-50%, 0);
 }
 
@@ -21,5 +21,5 @@
 .nav-button:active div { 
     transition: .2s;
     width: 100%;
-    transform: translate(-50%, -1.9vw);
+    transform: translate(-50%, -10px);
 }

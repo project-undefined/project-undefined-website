@@ -24,6 +24,10 @@ export default component$(() => {
           <h2>Protect your data</h2>
         </div>
 
+        <div class="section">
+          <h2>Be. you.</h2>
+        </div>
+
 
       </body>
     </div>

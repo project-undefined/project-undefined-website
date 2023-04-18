@@ -8,12 +8,9 @@ interface NavButtonProps {
 
 export const DropDown = component$<NavButtonProps>((props)=>{
     return (
-        <span class="drop-down">
-            
-            <NavButton text={props.text}/>
-            <div class="drop-down-after"/>
-            
-            
-        </span>
+        <button class="drop-down">
+             <div/>
+             {props.text}
+        </button>
     );
 });
