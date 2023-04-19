@@ -16,8 +16,8 @@ export const NavBar = component$(()=> {
             </a>
             
             <NavButton text='About'    /> 
-            <DropDown text='Solutions' />
-            <DropDown text='Community'/>
+            <DropDown text='Solutions' content={["hi","hello"]} />
+            <DropDown text='Community' content={["hi","hello"]}/>
             <NavButton text='Roadmap'  />
             <NavButton text='Merchandise' />
             <NavButton onClick$={toGithub} text='Github' />
