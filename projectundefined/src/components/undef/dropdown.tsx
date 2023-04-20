@@ -8,12 +8,19 @@ interface NavButtonProps {
 }
 
 export const DropDown = component$<NavButtonProps>((props)=>{
-    const _content = useSignal(props.content?.concat());
    
+    
     return (
         <button class="drop-down">
-             <div>
-                {_content}
+             <div class="dd-child">
+                
+                {
+                    props.content?.map((v, i)=>(
+                        <div key={v}>
+                            {v}
+                        </div>
+                    ))
+                }
              </div>
              {props.text}
             

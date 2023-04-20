@@ -16,7 +16,7 @@ export const NavBar = component$(()=> {
             </a>
             
             <NavButton text='About'    /> 
-            <DropDown text='Solutions' content={["hi","hello"]} />
+            <DropDown text='Solutions' content={["Lupine-OS", "U Messenger", "Overflow/UndefNET", "U search", "daoDTP"]} />
             <DropDown text='Community' content={["hi","hello"]}/>
             <NavButton text='Roadmap'  />
             <NavButton text='Merchandise' />
