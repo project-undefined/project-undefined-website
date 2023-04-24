@@ -34,6 +34,7 @@ body div.section h2 {
 }
 
 body div.section {
+    animation: load-in 1s;
     width: 50vw; 
     height: 40vw;
     border: 1px solid black;
@@ -47,6 +48,14 @@ body div.section:nth-child(odd) {
 
 }
 
+@keyframes load-in {
+    from {
+        background: transparent;
+    }
+    to {
+        background: black;
+    }
+}
 // Text animation
 @keyframes change-text {
     $keyframe-txt: 0;
